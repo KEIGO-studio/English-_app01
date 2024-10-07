@@ -1,17 +1,3 @@
-/*onClickAdd = () => {
-  document.getElementById("answer-button").remove();
-  const correctButton = document.createElement("button");
-  document.getElementById("correct-area").appendChild(correctButton);
-};
-
-const btn = document.querySelectorAll(".answer-button");
-
-btn.forEach((button) => {
-  button.addEventListener("click", onClickAdd);
-});*/
-
-//.addEventListener("click", onClickAdd);
-
 const problems = [
   {
     answerWords: ["of", "It", "a", "takes", "time", "lot"],
@@ -40,8 +26,8 @@ function loadProblem(index) {
   clickedOrder = [];
   correctArea.innerHTML = "";
   resultDiv.textContent = "";
-
   answerList.innerHTML = "";
+
   answerWords.forEach((word) => {
     const button = document.createElement("button");
     button.classList.add("answer-button");
@@ -82,7 +68,6 @@ function checkOrder(correctOrder) {
     swal
       .fire({
         title: "すばらしい！！",
-        text: "ボタンをクリックできましたね！",
         icon: "success",
         confirmButtonText: "次へ",
         width: "60%",
