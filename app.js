@@ -7,6 +7,22 @@ const problems = [
     answerWords: ["new", "I", "books", "bought", "a"],
     correctOrder: ["I", "bought", "a", "new", "books"],
   },
+  {
+    answerWords: ["much", "it", "cost", "How", "does", "?"],
+    correctOrder: ["How", "much", "does", "it", "cost", "?"],
+  },
+  {
+    answerWords: ["morning", "this", "I", "forgot", "what", "ate"],
+    correctOrder: ["I", "forgot", "what", "ate", "this", "morning"],
+  },
+  {
+    answerWords: ["been", "you", "?", "Italy", "Have", "", "ever", "to"],
+    correctOrder: ["Have", "you", "ever", "been", "to", "Italy", "?"],
+  },
+  {
+    answerWords: ["I", "early", "used", "getting", "am", "to", "up"],
+    correctOrder: ["I", "am", "used", "to", "getting", "up", "early"],
+  },
 ];
 
 let currentProblemIndex = 0;
@@ -70,7 +86,7 @@ function checkOrder(correctOrder) {
         title: "すばらしい！！",
         icon: "success",
         confirmButtonText: "次へ",
-        width: "60%",
+        width: "100%",
         height: "60%",
       })
       .then(() => {
